@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphing Linear Inequalities</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Graphing Linear Inequalities</h1>
+    <p>Visualize and solve linear inequalities in two variables.</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Enter Inequalities</h2>
+      <form id="inequality-form">
+        <label for="inequality1">Inequality 1:</label>
+        <input type="text" id="inequality1" placeholder="e.g., y > 2x + 1" required>
+        
+        <label for="inequality2">Inequality 2 (Optional):</label>
+        <input type="text" id="inequality2" placeholder="e.g., y ≤ -x + 4">
+
+        <label for="inequality3">Inequality 3 (Optional):</label>
+        <input type="text" id="inequality3" placeholder="Enter third inequality (optional)">
+        
+        <button type="button" id="graph-btn">Graph Inequalities</button>
+      </form>
+    </section>
+
+    <section class="graph-section">
+      <h2>Graph</h2>
+      <div id="graph-container">
+        <!-- Canvas for graph -->
+        <canvas id="graph-canvas" width="600" height="400"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for learning and visualization purposes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
